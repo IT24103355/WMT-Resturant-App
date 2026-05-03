@@ -1,0 +1,26 @@
+# Node modules
+node_modules/
+
+# Environment variables (sensitive!)
+.env
+.env.local
+.env.*.local
+
+# Uploaded files (if you don't want to track them)
+uploads/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# OS metadata
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+
+# Optional: package-lock.json (if you want to lock versions, commit it; otherwise ignore)
+# package-lock.json
