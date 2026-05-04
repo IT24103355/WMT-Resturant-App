@@ -86,6 +86,7 @@ function CustomerTabs() {
 function RiderTabs() {
     return (
         <Tab.Navigator
+            initialRouteName="Dashboard"
             screenOptions={({ route }) => ({
                 headerShown: false,
                 tabBarStyle: {

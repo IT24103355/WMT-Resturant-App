@@ -133,7 +133,9 @@ export default function ProfileScreen({ navigation }) {
         { icon: 'grid-outline', label: 'Manage Categories', screen: 'ManageCategories' },
         { icon: 'people-outline', label: 'Manage Users', screen: 'ManageUsers' },
         { icon: 'pricetag-outline', label: 'Manage Promotions', screen: 'ManagePromotions' },
-    ] : role === 'rider' ? [] : [
+    ] : role === 'rider' ? [
+        { icon: 'bicycle-outline', label: 'Rider Dashboard', screen: 'RiderMain' }
+    ] : [
         { icon: 'receipt-outline', label: 'My Orders', screen: 'Orders' },
         { icon: 'pricetag-outline', label: 'Promotions', screen: 'Promotions' },
         { icon: 'restaurant-outline', label: 'Browse Menu', screen: 'Menu' },

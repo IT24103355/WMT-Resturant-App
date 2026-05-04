@@ -678,8 +678,6 @@ const riderRespondTask = async (req, res) => {
 
         if (action === 'accept') {
             order.riderAssignmentStatus = 'accepted';
-            order.status = 'picked_up';
-            order.pickedUpAt = new Date();
         } else {
             const rejectedRiderId = order.assignedRider?.toString();
             order.riderAssignmentStatus = 'rejected';

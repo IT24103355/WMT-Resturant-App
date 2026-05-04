@@ -110,11 +110,11 @@ export default function ReviewScreen({ navigation, route }) {
             const formData = new FormData();
             formData.append('order', selectedOrder._id);
             formData.append('food', selectedFoodId);
-            formData.append('foodQuality', foodQuality);
-            formData.append('deliverySpeed', deliverySpeed);
-            formData.append('packaging', packaging);
-            formData.append('service', service);
-            formData.append('overallRating', overallRating);
+            formData.append('foodQuality', String(foodQuality));
+            formData.append('deliverySpeed', String(deliverySpeed));
+            formData.append('packaging', String(packaging));
+            formData.append('service', String(service));
+            formData.append('overallRating', String(overallRating));
             formData.append('comment', comment);
             formData.append('suggestions', suggestions);
 
